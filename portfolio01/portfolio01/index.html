@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>portfolio01</title>
+    <meta name="description" content="portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="site-title">
+        <a href="#">
+         Portfolio
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about">自己紹介</a></li>
+          <li><a href="#news">経歴</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- メイン -->
+      <div id="main">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./img/main.jpg">
+          <img src="img/main.jpg" alt="テキストテキストテキスト">
+        </picture>
+      </div>
+
+      <!-- 自己紹介 -->
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">自己紹介</h2>
+        <ul>
+          <li>川村雄生</li>
+          <li>龍谷大学
+          </li>
+          <li>先端理工学部</li>
+          <li>githubアカウント：https://github.com/kawamura-yuki</li>
+        </ul>
+        <p>
+          githubでポートフォリオとして掲示板サイト（php）を作成しました。
+        </p>
+      </section>
+
+
+      <section id="news" class="wrapper">
+        <h2 class="sec-title">経歴</h2>
+        <dl>
+          <dt>2020</dt>
+          <dd>龍谷大学　入学</dd>
+          <dt></dt>
+          <dd>普通自動車第一種運転免許取得</dd>
+          <dt>2024</dt>
+          <dd>龍谷大学　卒業見込み</dd>
+
+        </dl>
+      </section>
+
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">お問い合わせ</h2>
+ 
+        <form action="#" method="post">
+          <dl>
+            <dt><label for="name">名前</label></dt>
+            <dd><input type="text" id="name"></dd>
+            <dt><label for="email">メールアドレス</label></dt>
+            <dd><input type="email" id="email"></dd>
+            <dt><label for="name">メッセージ</label></dt>
+            <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信"></div>
+        </form>
+      </section>
+
+
+      <footer id="footer"></footer>
+    </picture>
+  </div>
+    </main>
+  </body>
+</html>
